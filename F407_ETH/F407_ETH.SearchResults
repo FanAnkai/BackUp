@@ -1,0 +1,5 @@
+---- tcp_client_connected Matches (6 in 2 files) ----
+Tcp_client_demo.c (lwip\lwip_app\tcp_client_demo):        tcp_connect(tcppcb,&rmtipaddr,TCP_CLIENT_PORT,tcp_client_connected);  //连接到目的地址的指定端口上,当连接成功后回调tcp_client_connected()函数
+Tcp_client_demo.c (lwip\lwip_app\tcp_client_demo):                    tcp_connect(tcppcb,&rmtipaddr,TCP_CLIENT_PORT,tcp_client_connected);//连接到目的地址的指定端口上,当连接成功后回调tcp_client_connected()函数
+Tcp_client_demo.c (lwip\lwip_app\tcp_client_demo):err_t tcp_client_connected(void *arg, struct tcp_pcb *tpcb, err_t err)
+Tcp_client_demo.h (lwip\lwip_app\tcp_client_demo):err_t tcp_client_connected(void *arg, struct tcp_pcb *tpcb, err_t err);

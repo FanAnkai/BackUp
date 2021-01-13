@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"f429\startup_stm32f429xx.o"
+"f429\main.o"
+"f429\stm32f4xx_it.o"
+"f429\stm32f4xx_hal_msp.o"
+"f429\stm32f4xx_hal_tim.o"
+"f429\stm32f4xx_hal_tim_ex.o"
+"f429\stm32f4xx_hal_rcc.o"
+"f429\stm32f4xx_hal_rcc_ex.o"
+"f429\stm32f4xx_hal_flash.o"
+"f429\stm32f4xx_hal_flash_ex.o"
+"f429\stm32f4xx_hal_flash_ramfunc.o"
+"f429\stm32f4xx_hal_gpio.o"
+"f429\stm32f4xx_hal_dma_ex.o"
+"f429\stm32f4xx_hal_dma.o"
+"f429\stm32f4xx_hal_pwr.o"
+"f429\stm32f4xx_hal_pwr_ex.o"
+"f429\stm32f4xx_hal_cortex.o"
+"f429\stm32f4xx_hal.o"
+"f429\stm32f4xx_hal_exti.o"
+"f429\system_stm32f4xx.o"
+"f429\led.o"
+"f429\mcu_init.o"
+--library_type=microlib --strict --scatter "F429\F429.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F429.map" -o F429\F429.axf
